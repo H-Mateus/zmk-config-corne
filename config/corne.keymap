@@ -39,7 +39,7 @@
         r_pipe: r_pipe {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp PIPE &kp GT>;
+            bindings = <&kp PIPE2 &kp GT>;
             label = "R_PIPE";
         };
 
