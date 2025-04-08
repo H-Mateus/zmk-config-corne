@@ -35,6 +35,22 @@
         };
     };
 
+    macros {
+        r_pipe: r_pipe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp PIPE &kp GT>;
+            label = "R_PIPE";
+        };
+
+        r_assign: r_assign {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LT &kp MINUS>;
+            label = "R_ASSIGN";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -63,7 +79,7 @@
             bindings = <
 &kp LEFT_SHIFT  &kp DELETE            &mt AMPERSAND N7          &mt ASTERISK N8             &mt LEFT_PARENTHESIS N9  &kp EQUAL    &kp LEFT_BRACE   &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &kp BACKSPACE   &kp SLASH             &mt DOLLAR NUMBER_4       &HML LEFT_SHIFT N5          &mt CARET NUMBER_6       &kp RET      &kp LEFT         &kp DOWN         &kp UP                &kp RIGHT              &kp NON_US_HASH   &kp PERCENT
-&kp TAB         &kp NON_US_BACKSLASH  &mt EXCLAMATION NUMBER_1  &mt DOUBLE_QUOTES NUMBER_2  &mt HASH NUMBER_3        &kp N0       &kp COMMA        &kp PERIOD       &kp PIPE2             &kp ASTRK              &kp DOLLAR        &kp RIGHT_CONTROL
+&kp TAB         &kp NON_US_BACKSLASH  &mt EXCLAMATION NUMBER_1  &mt DOUBLE_QUOTES NUMBER_2  &mt HASH NUMBER_3        &kp N0       &r_assign        &r_pipe          &kp PIPE2             &kp ASTRK              &kp DOLLAR        &kp RIGHT_CONTROL
                                                                 &kp LGUI                    &trans                   &kp SPACE    &kp RIGHT_SHIFT  &trans           &kp RALT
             >;
         };
