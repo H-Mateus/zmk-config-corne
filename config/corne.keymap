@@ -64,7 +64,7 @@
             bindings = <
 &kp ESCAPE     &kp Q            &kp W                &kp E              &kp R            &kp T                              &kp Y    &HMR RIGHT_GUI U  &HMR RIGHT_SHIFT I  &HMR RIGHT_CONTROL O  &HMR RIGHT_ALT P  &kp MINUS
 &kp BACKSPACE  &HML LEFT_ALT A  &HML LEFT_CONTROL S  &HML LEFT_SHIFT D  &HML LEFT_GUI F  &kp G                              &kp H    &kp J             &kp K               &kp L                 &kp SEMI          &kp SQT
-&kp TAB        &kp Z            &kp X                &kp C              &kp V            &kp B                              &kp N    &kp M             &kp COMMA           &kp DOT               &kp FSLH          &kp ESC
+&kp TAB        &kp Z            &kp X                &kp C              &kp V            &kp B                              &kp N    &kp M             &kp COMMA           &kp DOT               &kp FSLH          &kp NON_US_BACKSLASH
                                                      &sl 3              &mo 1            &HML LS(LA(LC(LEFT_GUI))) SPACE    &kp RET  &mo 2             &kp RALT
             >;
         };
